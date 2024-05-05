@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block custom_css %}
+<link rel="stylesheet" href="{% static 'css/register_style.css' %}">
+{% endblock custom_css %}
+{% block content %}
+<div class="container">
+    <div class="row center">
+        <div id="register-page" class="col-md-5 mx-auto p-5 shadow-sm border rounded border-primary border-cust-primary">
+            <p>Already have an account? <a color="red "href="{% url 'accounts:login' %}">Login Here</a></p>
+            {% if messages %}
+            <div class="messages">
+                {% for message in messages %}
+                <div {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary btn-cust-primary">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

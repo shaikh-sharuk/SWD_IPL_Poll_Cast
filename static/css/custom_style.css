@@ -1,0 +1,87 @@
+html, body {
+    height:100%;
+    padding: 0;
+    margin: 0;
+    /* color: white !important;  */
+  }
+
+  body #banner-text{
+    color: #e9f0f5;
+  }
+
+html {
+    background: url(../img/IPL2024.jpeg) no-repeat center center fixed; 
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+
+body {
+    background: rgba(0, 0, 0, 0.1);
+    min-height: 100%;
+    overflow-y: scroll;
+}
+
+#banner-text{
+    text-align: left;
+    color: #8a3ab7;
+    padding-top: 20%;
+    margin:0 20px;
+    margin-top: -50px;
+}
+
+.cust_container{
+    background-color: rgba(255,255,255,1);
+    border-radius: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/*#banner-text a {
+    background-color:#ffbc59 ;
+    color: #8a3ab7;
+    font-weight: 500;
+    border-color: #ffbc59;
+}*/
+
+.btn-custom{
+    min-width: 120px;
+    border-radius: 20px;
+    background-color: #ffbc59;
+    border:2px solid #ffbc59;
+    color: #8a3ab7;
+    font-weight: 500;
+}
+
+
+.btn-cust-primary {
+    background-color:#8a3ab7 !important;
+}
+
+.text-cust-primary{
+    color:#8a3ab7 !important;
+}
+
+.border-cust-primary{
+    border: solid 2px #8a3ab7 !important;
+}
+
+.navbar-expand-sm.navbar-cust-fix .navbar-brand i {
+    color: #ffffff;
+}
+
+.navbar-expand-sm.navbar-cust-fix {
+    justify-content: space-between !important;   
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.navbar-expand-sm.navbar-cust-fix.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+}
+.navbar-expand-sm.navbar-cust-fix .navbar-collapse {
+    flex-grow: unset;
+}
+

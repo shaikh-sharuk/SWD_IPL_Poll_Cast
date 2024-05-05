@@ -1,0 +1,16 @@
+.border-cust-primary{ 
+    border: solid 2px #2b50bf !important;
+}
+.btn-cust-primary {
+    background-color:#3a47b7 !important;
+}
+
+#register-page{
+    background-color: #ffffff;
+}
+
+a {
+    color:#2b56c5;
+    font-weight: bold;
+    text-decoration: none;
+}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block custom_css %}
+<link rel="stylesheet" href="{% static 'css/custom_style.css' %}">
+{% endblock custom_css %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <div id="banner-text">
+                <h1> INDIAN PREMIER LEAGUE</h1>
+                <h4> FAN POLL </h4>
+                <a class="btn btn-light btn-lg btn-custom" href="{% url 'polls:list' %}" role="button">Start</a>
+            </div>
+        </div> 
+    </div>
+</div>
+{% endblock content %}
